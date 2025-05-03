@@ -56,7 +56,7 @@ services:
     restart: unless-stopped
 
   transactor:
-    image: ltp1405/transactor:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/transactor:${HULY_VERSION}
     environment:
       - SERVER_PORT=3333
       - SERVER_SECRET=${SECRET}
@@ -72,7 +72,7 @@ services:
     restart: unless-stopped
 
   collaborator:
-    image: hardcoreeng/collaborator:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/collaborator:${HULY_VERSION}
     environment:
       - COLLABORATOR_PORT=3078
       - SECRET=${SECRET}
@@ -83,7 +83,7 @@ services:
     restart: unless-stopped
 
   account:
-    image: hardcoreeng/account:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/account:${HULY_VERSION}
     environment:
       - SERVER_PORT=3000
       - SERVER_SECRET=${SECRET}
@@ -99,7 +99,7 @@ services:
     restart: unless-stopped
 
   workspace:
-    image: hardcoreeng/workspace:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/workspace:${HULY_VERSION}
     environment:
       - SERVER_SECRET=${SECRET}
       - DB_URL=mongodb://mongodb:27017
@@ -112,7 +112,7 @@ services:
     restart: unless-stopped
 
   front:
-    image: ltp1405/front:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/front:${HULY_VERSION}
     environment:
       - SERVER_PORT=8080
       - SERVER_SECRET=${SECRET}
@@ -136,7 +136,7 @@ services:
     restart: unless-stopped
 
   fulltext:
-    image: hardcoreeng/fulltext:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/fulltext:${HULY_VERSION}
     environment:
       - SERVER_SECRET=${SECRET}
       - DB_URL=mongodb://mongodb:27017
@@ -149,7 +149,7 @@ services:
     restart: unless-stopped
 
   stats:
-    image: hardcoreeng/stats:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/stats:${HULY_VERSION}
     environment:
       - PORT=4900
       - SERVER_SECRET=${SECRET}
