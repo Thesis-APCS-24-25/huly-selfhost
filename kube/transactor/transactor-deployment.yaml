@@ -51,7 +51,7 @@ spec:
                 secretKeyRef:
                   name: huly-secret
                   key: SERVER_SECRET
-          image: hardcoreeng/transactor:v0.6.482
+          image: asia-southeast1-docker.pkg.dev/thesis2425/platform/transactor
           name: transactor
           ports:
             - containerPort: 3333

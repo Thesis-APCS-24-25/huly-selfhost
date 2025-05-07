@@ -7,6 +7,11 @@ metadata:
     app: front
   name: front
 spec:
+  defaultBackend:
+    service:
+      name: front
+      port:
+        number: 80
   ingressClassName: nginx
   rules:
     - host: huly.example

@@ -32,7 +32,7 @@ spec:
                 secretKeyRef:
                   name: huly-secret
                   key: SERVER_SECRET
-          image: hardcoreeng/collaborator:v0.6.482
+          image: asia-southeast1-docker.pkg.dev/thesis2425/platform/collaborator
           name: collaborator
           ports:
             - containerPort: 3078

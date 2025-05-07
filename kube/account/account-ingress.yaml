@@ -7,6 +7,11 @@ metadata:
     app: account
   name: account
 spec:
+  defaultBackend:
+    service:
+      name: account
+      port:
+        number: 80
   ingressClassName: nginx
   rules:
     - host: account.huly.example

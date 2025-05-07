@@ -47,7 +47,7 @@ spec:
               value: http://account
             - name: STATS_URL
               value: http://stats
-          image: hardcoreeng/fulltext:v0.6.482
+          image: asia-southeast1-docker.pkg.dev/thesis2425/platform/fulltext
           name: fulltext
           ports:
             - containerPort: 4700
