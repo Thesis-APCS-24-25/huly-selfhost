@@ -87,6 +87,7 @@ export TITLE=${TITLE:-Huly}
 export DEFAULT_LANGUAGE=${DEFAULT_LANGUAGE:-en}
 export LAST_NAME_FIRST=${LAST_NAME_FIRST:-true}
 export HULY_SECRET=$(cat .huly.secret)
+export HULY_VERSION=$HULY_VERSION
 
 envsubst < .template.huly.conf > $CONFIG_FILE
 
