@@ -5,7 +5,7 @@ DOCKER_NAME="huly"
 CONFIG_FILE="huly.conf"
 
 # Default values for configuration
-_HOST_ADDRESS="localhost"
+_HOST_ADDRESS="alternative.platform.we-thesis.com"
 _HTTP_PORT="80"
 _SECURE="" # Default to not secure (no SSL)
 
