@@ -90,4 +90,4 @@ echo -e "\033[1;32mRunning 'docker compose up -d' now...\033[0m"
 docker compose up -d
 
 echo -e "\033[1;32mSetup is complete!\n Generating nginx.conf...\033[0m"
-./nginx.noni.sh
+./cloud-instance-nginx.sh
