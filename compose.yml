@@ -47,7 +47,7 @@ services:
     restart: unless-stopped
 
   transactor:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/transactor:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/transactor:${HULY_VERSION}
     environment:
       - SERVER_PORT=3333
       - SERVER_SECRET=${SECRET}
@@ -63,7 +63,7 @@ services:
     restart: unless-stopped
 
   collaborator:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/collaborator:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/collaborator:${HULY_VERSION}
     environment:
       - COLLABORATOR_PORT=3078
       - SECRET=${SECRET}
@@ -74,7 +74,7 @@ services:
     restart: unless-stopped
 
   account:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/account:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/account:${HULY_VERSION}
     environment:
       - SERVER_PORT=3000
       - SERVER_SECRET=${SECRET}
@@ -90,7 +90,7 @@ services:
     restart: unless-stopped
 
   workspace:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/workspace:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/workspace:${HULY_VERSION}
     environment:
       - SERVER_SECRET=${SECRET}
       - DB_URL=mongodb+srv://pltung21:MatKhauDaiVl1405@thesis.tmrvl4k.mongodb.net/?retryWrites=true&w=majority&appName=Thesis
@@ -103,7 +103,7 @@ services:
     restart: unless-stopped
 
   front:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/front:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/front:${HULY_VERSION}
     environment:
       - VERSION=${HULY_VERSION}
       - SERVER_PORT=8080
@@ -128,7 +128,7 @@ services:
     restart: unless-stopped
 
   fulltext:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/fulltext:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/fulltext:${HULY_VERSION}
     environment:
       - SERVER_SECRET=${SECRET}
       - DB_URL=mongodb+srv://pltung21:MatKhauDaiVl1405@thesis.tmrvl4k.mongodb.net/?retryWrites=true&w=majority&appName=Thesis
@@ -141,7 +141,7 @@ services:
     restart: unless-stopped
 
   stats:
-    image: asia-southeast1-docker.pkg.dev/thesis2425/platform/stats:${HULY_VERSION}
+    image: asia-southeast1-docker.pkg.dev/thesis2425-468203/platform/stats:${HULY_VERSION}
     environment:
       - PORT=4900
       - SERVER_SECRET=${SECRET}
